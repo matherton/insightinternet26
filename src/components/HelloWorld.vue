@@ -40,6 +40,9 @@
 
             <template #title>
               <h2 class="text-h5 font-weight-bold">Get started</h2>
+              <v-btn @click="scrollToAboutSection"
+                >Scroll to About Section</v-btn
+              >
             </template>
 
             <template #subtitle>
@@ -54,7 +57,16 @@
     </div>
   </v-container>
 </template>
-
+<script>
+export default {
+  methods: {
+    scrollToAboutSection() {
+      const aboutSection = document.getElementById("about-section");
+      aboutSection.scrollIntoView({ behavior: "smooth" });
+    },
+  },
+};
+</script>
 <script setup>
 const links = [
   {
