@@ -1,5 +1,9 @@
 <template>
-  <div class="contact fill-height">
-    <h1>This is a contact section</h1>
+  <div
+    id="contact-section"
+    class="contact fill-height"
+    style="scroll-margin-top: 64px"
+  >
+    <h1>This is the contact section</h1>
   </div>
 </template>

@@ -7,7 +7,41 @@
         <div class="text-body-2 font-weight-light mb-n1">Welcome to</div>
         <h1 class="text-h2 my-0 font-weight-bold">InsightInternet</h1>
       </div>
-
+      <v-row class="mb-8"> </v-row>
+      <v-col cols="12" class="d-flex flex-wrap justify-center">
+        <v-btn
+          color="primary"
+          class="ma-2"
+          @click="scrollToAboutSection()"
+          variant="elevated"
+        >
+          About
+        </v-btn>
+        <v-btn
+          color="primary"
+          class="ma-2"
+          @click="scrollToSolutionsSection()"
+          variant="elevated"
+        >
+          Solutions
+        </v-btn>
+        <v-btn
+          color="primary"
+          class="ma-2"
+          @click="scrollToWorkSection()"
+          variant="elevated"
+        >
+          Work
+        </v-btn>
+        <v-btn
+          color="primary"
+          class="ma-2"
+          @click="scrollToContactSection()"
+          variant="elevated"
+        >
+          Contact
+        </v-btn>
+      </v-col>
       <v-row>
         <v-col v-for="link in links" :key="link.href" cols="6">
           <v-card
@@ -40,9 +74,6 @@
 
             <template #title>
               <h2 class="text-h5 font-weight-bold">Get started</h2>
-              <v-btn @click="scrollToAboutSection"
-                >Scroll to About Section</v-btn
-              >
             </template>
 
             <template #subtitle>
@@ -63,6 +94,18 @@ export default {
     scrollToAboutSection() {
       const aboutSection = document.getElementById("about-section");
       aboutSection.scrollIntoView({ behavior: "smooth" });
+    },
+    scrollToSolutionsSection() {
+      const solutionsSection = document.getElementById("solutions-section");
+      solutionsSection.scrollIntoView({ behavior: "smooth" });
+    },
+    scrollToWorkSection() {
+      const workSection = document.getElementById("work-section");
+      workSection.scrollIntoView({ behavior: "smooth" });
+    },
+    scrollToContactSection() {
+      const contactSection = document.getElementById("contact-section");
+      contactSection.scrollIntoView({ behavior: "smooth" });
     },
   },
 };
