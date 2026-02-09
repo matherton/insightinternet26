@@ -1,5 +1,5 @@
 <template>
-  <v-container class="fill-height d-flex align-center" max-width="900">
+  <v-container class="fill-height d-flex align-center" max-width="900" id="top">
     <div>
       <v-img class="mb-4" height="150" src="@/assets/logo.png" />
 
