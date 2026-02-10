@@ -1,47 +1,14 @@
 <template>
   <v-container class="fill-height d-flex align-center" max-width="900" id="top">
     <div>
-      <v-img class="mb-4" height="150" src="@/assets/logo.png" />
+      <v-img class="mb-4" height="250" src="../assets/me-cropped.png" />
 
       <div class="mb-8 text-center">
         <div class="text-body-2 font-weight-light mb-n1">Welcome to</div>
         <h1 class="text-h2 my-0 font-weight-bold">InsightInternet</h1>
       </div>
       <v-row class="mb-8"> </v-row>
-      <v-col cols="12" class="d-flex flex-wrap justify-center">
-        <v-btn
-          color="primary"
-          class="ma-2"
-          @click="scrollToAboutSection()"
-          variant="elevated"
-        >
-          About
-        </v-btn>
-        <v-btn
-          color="primary"
-          class="ma-2"
-          @click="scrollToSolutionsSection()"
-          variant="elevated"
-        >
-          Solutions
-        </v-btn>
-        <v-btn
-          color="primary"
-          class="ma-2"
-          @click="scrollToWorkSection()"
-          variant="elevated"
-        >
-          Work
-        </v-btn>
-        <v-btn
-          color="primary"
-          class="ma-2"
-          @click="scrollToContactSection()"
-          variant="elevated"
-        >
-          Contact
-        </v-btn>
-      </v-col>
+
       <v-row>
         <v-col v-for="link in links" :key="link.href" cols="6">
           <v-card
@@ -90,6 +57,11 @@
 </template>
 <script>
 export default {
+  data() {
+    return {
+      handleEvent: null, // Initialize with a default value
+    };
+  },
   methods: {
     scrollToAboutSection() {
       const aboutSection = document.getElementById("about-section");
