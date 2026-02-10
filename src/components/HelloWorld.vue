@@ -19,21 +19,6 @@
       </div>
 
       <v-row>
-        <v-col v-for="link in links" :key="link.href" cols="6">
-          <v-card
-            append-icon="mdi-open-in-new"
-            class="py-4"
-            color="surface-variant"
-            :prepend-icon="link.icon"
-            rel="noopener noreferrer"
-            rounded="lg"
-            :subtitle="link.subtitle"
-            target="_blank"
-            :title="link.title"
-            variant="tonal"
-          />
-        </v-col>
-
         <v-col cols="12">
           <v-card
             class="py-4"
@@ -54,11 +39,26 @@
 
             <template #subtitle>
               <div class="text-subtitle-1">
-                Transform your business with custom-built solutions tailored to
-                your needs.
+                Ready to transform your business with custom-built solutions
+                tailored to your needs? Contact us
               </div>
             </template>
           </v-card>
+        </v-col>
+
+        <v-col v-for="link in links" :key="link.href" cols="6">
+          <v-card
+            :href="link.href"
+            append-icon="mdi-open-in-new"
+            class="py-4"
+            color="surface-variant"
+            :prepend-icon="link.icon"
+            rel="noopener noreferrer"
+            rounded="lg"
+            :subtitle="link.subtitle"
+            :title="link.title"
+            variant="tonal"
+          />
         </v-col>
       </v-row>
     </div>
@@ -104,13 +104,13 @@ const links = [
     href: "https://vuetifyjs.com/introduction/why-vuetify/#feature-guides",
     icon: "mdi-briefcase-outline",
     subtitle: "Explore frameworks and Tools.",
-    title: "Solutions",
+    title: "Mission statement",
   },
   {
     href: "https://vuetifyjs.com/components/all",
     icon: "mdi-briefcase-account-outline",
     subtitle: "Discover what projects have been built by InsightInternet.",
-    title: "Work",
+    title: "Values",
   },
   {
     href: "https://discord.vuetifyjs.com",
