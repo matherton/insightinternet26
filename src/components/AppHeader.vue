@@ -4,7 +4,9 @@
       <v-app-bar-nav-icon></v-app-bar-nav-icon>
     </template> -->
 
-    <v-app-bar-title @click="toTop()"> InsightInternet </v-app-bar-title>
+    <v-app-bar-title @click="toTop()" style="cursor: pointer">
+      InsightInternet
+    </v-app-bar-title>
 
     <v-btn
       color="primary"
