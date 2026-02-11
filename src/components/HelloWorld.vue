@@ -22,7 +22,7 @@
         <v-col cols="12">
           <v-card
             class="py-4"
-            href="#contact"
+            @click="scrollToContactSection()"
             color="surface-variant"
             image="https://cdn.vuetifyjs.com/docs/images/one/create/feature.png"
             prepend-icon="mdi-rocket-launch-outline"
@@ -46,7 +46,7 @@
           </v-card>
         </v-col>
 
-        <v-col v-for="link in links" :key="link.href" cols="6">
+        <!-- <v-col v-for="link in links" :key="link.href" cols="6">
           <v-card
             :href="link.href"
             append-icon="mdi-open-in-new"
@@ -59,7 +59,7 @@
             :title="link.title"
             variant="tonal"
           />
-        </v-col>
+        </v-col> -->
       </v-row>
     </div>
   </v-container>
@@ -92,7 +92,7 @@ export default {
 };
 </script>
 <script setup>
-const links = [
+/* const links = [
   {
     href: "https://vuetifyjs.com/",
     icon: "mdi-information-outline",
@@ -118,5 +118,5 @@ const links = [
     subtitle: "Connect with InsightInternet.",
     title: "Contact",
   },
-];
+]; */
 </script>
