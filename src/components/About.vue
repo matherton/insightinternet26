@@ -46,6 +46,7 @@ const items = [
 export default {
   components: {
     DynamicCard,
+    List,
   },
 };
 </script>
