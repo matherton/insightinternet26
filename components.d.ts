@@ -20,6 +20,7 @@ declare module 'vue' {
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     Solutions: typeof import('./src/components/Solutions.vue')['default']
+    ThoughtBubble: typeof import('./src/components/ThoughtBubble.vue')['default']
     Work: typeof import('./src/components/Work.vue')['default']
   }
 }

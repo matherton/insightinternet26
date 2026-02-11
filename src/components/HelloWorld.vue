@@ -1,4 +1,13 @@
 <template>
+  <ThoughtBubble
+    :thoughts="[
+      'What should I build next?',
+      'Vue is amazing!',
+      'I love coding!',
+      'Time for coffee?',
+    ]"
+    :interval="3000"
+  />
   <v-container class="fill-height d-flex align-center" max-width="900" id="top">
     <div>
       <v-img class="mb-4" height="250" src="../assets/me-cropped.png" />
@@ -65,6 +74,8 @@
   </v-container>
 </template>
 <script>
+import ThoughtBubble from "./ThoughtBubble.vue";
+
 export default {
   data() {
     return {
