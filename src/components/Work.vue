@@ -1,4 +1,13 @@
 <template>
+  <v-divider
+    color="primary"
+    opacity=".7"
+    thickness="10"
+    variant="double"
+    gradient
+  >
+    Work
+  </v-divider>
   <div
     id="work-section"
     class="work fill-height"

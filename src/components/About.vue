@@ -9,6 +9,15 @@ const items = [
 </script>
 
 <template>
+  <v-divider
+    color="primary"
+    opacity=".7"
+    thickness="10"
+    variant="double"
+    gradient
+  >
+    About
+  </v-divider>
   <v-container class="fill-height">
     <v-row id="about-section" class="about" style="scroll-margin-top: 64px">
       <v-col cols="12" md="4">
