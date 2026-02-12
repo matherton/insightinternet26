@@ -8,8 +8,8 @@
     ]"
     :interval="3000"
   />
-  <v-container class="fill-height d-flex align-center" max-width="900" id="top">
-    <div>
+  <v-container class="d-flex align-center" max-width="900" id="top">
+    <div style="padding-top: 13.5rem">
       <v-img class="mb-4" height="250" src="../assets/me-cropped.png" />
 
       <div class="mb-8 text-center">
