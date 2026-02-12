@@ -11,7 +11,7 @@
   <div
     id="contact-section"
     class="contact fill-height"
-    style="scroll-margin-top: 64px"
+    style="scroll-margin-top: 6rem"
   >
     <h1>This is the contact section</h1>
   </div>

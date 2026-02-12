@@ -11,7 +11,7 @@
   <div
     id="work-section"
     class="work fill-height"
-    style="scroll-margin-top: 64px"
+    style="scroll-margin-top: 6rem"
   >
     <h1>This is the work section</h1>
   </div>

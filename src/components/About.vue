@@ -18,8 +18,8 @@ const items = [
   >
     About
   </v-divider>
-  <v-container class="fill-height">
-    <v-row id="about-section" class="about" style="scroll-margin-top: 64px">
+  <v-container>
+    <v-row id="about-section" class="about" style="scroll-margin-top: 6rem">
       <v-col cols="12" md="4">
         <DynamicCard
           title="Story"
