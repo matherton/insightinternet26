@@ -2,7 +2,9 @@
   <div class="thought-bubble">
     <div class="bubble-content">
       <transition name="fade" mode="out-in">
-        <div :key="currentThought">{{ currentThought }}</div>
+        <div :key="currentThought">
+          <p>{{ currentThought }}</p>
+        </div>
       </transition>
     </div>
     <div class="bubble-tail">
