@@ -1,37 +1,44 @@
-documentation can be found here .
-
 <script setup>
-import { reactive } from "vue";
+import { reactive, ref } from "vue";
 import { useVuelidate } from "@vuelidate/core";
-import { email, required } from "@vuelidate/validators";
-
-import { ref } from "vue";
-
-const value = ref("Hello!");
+import { email as emailValidator, required } from "@vuelidate/validators";
 
 const initialState = {
-  name: "",
+  firstname: "",
+  lastname: "",
   email: "",
-  select: null,
-  checkbox: null,
+  textArea: "",
 };
 
-const state = reactive({
-  ...initialState,
-});
+const state = reactive({ ...initialState });
 
-const items = ["Item 1", "Item 2", "Item 3", "Item 4"];
+const nameRules = [
+  (value) => !!value || "Name is required.",
+  (value) => value?.length <= 10 || "Name must be less than 10 characters.",
+];
+
+const emailRules = [
+  (value) => !!value || "E-mail is required.",
+  (value) => /.+@.+\..+/.test(value) || "E-mail must be valid.",
+];
+
+// NEW: validation rules for the message textarea
+const messageRules = [(value) => !!value || "Message is required."];
 
 const rules = {
-  name: { required },
-  email: { required, email },
-  select: { required },
-  items: { required },
-  checkbox: { required },
-  textArea: [(v) => v.length <= 25 || "Max 25 characters"],
+  firstname: { required },
+  lastname: { required },
+  email: { required, email: emailValidator },
+  textArea: { required },
 };
 
 const v$ = useVuelidate(rules, state);
+
+const form = ref(null);
+
+async function submit() {
+  await v$.value.$validate();
+}
 
 function clear() {
   v$.value.$reset();
@@ -39,8 +46,11 @@ function clear() {
   for (const [key, value] of Object.entries(initialState)) {
     state[key] = value;
   }
+
+  form.value?.reset();
 }
 </script>
+
 <template>
   <v-divider
     color="primary"
@@ -51,23 +61,25 @@ function clear() {
   >
     Contact
   </v-divider>
+
   <div
     class="contact fill-height"
     id="contact-section"
     style="scroll-margin-top: 6rem"
   >
     <div class="mb-8 text-center">
-      <p pt="8" class="text-subtitle-1">
+      <p class="text-subtitle-1">
         Ready to transform your business with custom applications? Contact us
         today to discuss your project.
       </p>
     </div>
-    <v-form v-model="valid">
+
+    <v-form ref="form">
       <v-container>
         <v-row>
           <v-col cols="12" md="4">
             <v-text-field
-              v-model="firstname"
+              v-model="state.firstname"
               :counter="10"
               :rules="nameRules"
               label="First name"
@@ -77,7 +89,7 @@ function clear() {
 
           <v-col cols="12" md="4">
             <v-text-field
-              v-model="lastname"
+              v-model="state.lastname"
               :counter="10"
               :rules="nameRules"
               label="Last name"
@@ -87,72 +99,27 @@ function clear() {
 
           <v-col cols="12" md="4">
             <v-text-field
-              v-model="email"
+              v-model="state.email"
               :rules="emailRules"
               label="E-mail"
               required
             ></v-text-field>
           </v-col>
 
-          <v-container fluid>
+          <v-col cols="12">
             <v-textarea
-              :model-value="value"
-              :rules="rules"
-              label="Text"
+              v-model="state.textArea"
+              :rules="messageRules"
+              label="Message"
               counter
+              required
             ></v-textarea>
-          </v-container>
+          </v-col>
         </v-row>
-        <!-- <div class="d-flex flex-column">
-          <v-btn class="mt-4" color="success" block @click="validate">
-            Validate
-          </v-btn>
 
-          <v-btn class="mt-4" color="error" block @click="reset">
-            Reset Form
-          </v-btn>
-
-          <v-btn class="mt-4" color="warning" block @click="resetValidation">
-            Reset Validation
-          </v-btn>
-        </div> -->
-        <v-btn class="me-4" @click="v$.$validate"> submit </v-btn>
-        <v-btn @click="clear"> clear </v-btn>
+        <v-btn class="me-4" @click="submit">Submit</v-btn>
+        <v-btn @click="clear">Clear</v-btn>
       </v-container>
     </v-form>
   </div>
 </template>
-<script>
-export default {
-  data: () => ({
-    valid: false,
-    firstname: "",
-    lastname: "",
-    nameRules: [
-      (value) => {
-        if (value) return true;
-
-        return "Name is required.";
-      },
-      (value) => {
-        if (value?.length <= 10) return true;
-
-        return "Name must be less than 10 characters.";
-      },
-    ],
-    email: "",
-    emailRules: [
-      (value) => {
-        if (value) return true;
-
-        return "E-mail is required.";
-      },
-      (value) => {
-        if (/.+@.+\..+/.test(value)) return true;
-
-        return "E-mail must be valid.";
-      },
-    ],
-  }),
-};
-</script>
