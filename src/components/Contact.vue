@@ -113,13 +113,18 @@ function clear() {
           </v-col>
         </v-row>
 
-        <v-btn class="me-4" @click="submit">Submit</v-btn>
-        <v-btn @click="clear">Clear</v-btn>
+        <div class="formBtns">
+          <v-btn @click="submit">Submit</v-btn>
+          <v-btn @click="clear">Clear</v-btn>
+        </div>
       </v-container>
     </v-form>
   </div>
 </template>
 <style scoped>
+.formBtns {
+  margin-top: 1rem;
+}
 .contact {
   padding: 2rem 0rem; /* ensures Contact form btn's are not hidden behind sticky footer */
 }
