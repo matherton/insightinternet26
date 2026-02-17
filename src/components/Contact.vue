@@ -14,7 +14,7 @@ const state = reactive({ ...initialState });
 
 const nameRules = [
   (value) => !!value || "Name is required.",
-  (value) => value?.length <= 10 || "Name must be less than 10 characters.",
+  (value) => value?.length <= 20 || "Name must be less than 20 characters.",
 ];
 
 const emailRules = [
@@ -62,11 +62,7 @@ function clear() {
     Contact
   </v-divider>
 
-  <div
-    class="contact fill-height"
-    id="contact-section"
-    style="scroll-margin-top: 6rem"
-  >
+  <div class="contact" id="contact-section" style="scroll-margin-top: 6rem">
     <div class="mb-8 text-center">
       <p class="text-subtitle-1">
         Ready to transform your business with custom applications? Contact us
@@ -80,7 +76,7 @@ function clear() {
           <v-col cols="12" md="4">
             <v-text-field
               v-model="state.firstname"
-              :counter="10"
+              :counter="20"
               :rules="nameRules"
               label="First name"
               required
@@ -90,7 +86,7 @@ function clear() {
           <v-col cols="12" md="4">
             <v-text-field
               v-model="state.lastname"
-              :counter="10"
+              :counter="20"
               :rules="nameRules"
               label="Last name"
               required
@@ -123,3 +119,8 @@ function clear() {
     </v-form>
   </div>
 </template>
+<style scoped>
+.contact {
+  padding: 2rem 0rem; /* ensures Contact form btn's are not hidden behind sticky footer */
+}
+</style>
