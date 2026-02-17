@@ -70,7 +70,7 @@ export default {
 }
 
 .bubble-content {
-  background: white;
+  background: white !important;
   border: 3px solid #333;
   border-radius: 50%;
   padding: 30px 40px;
