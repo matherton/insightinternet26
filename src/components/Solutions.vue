@@ -1,3 +1,7 @@
+<script setup>
+import { VCard, VImg } from "vuetify/components";
+</script>
+
 <template>
   <v-divider
     color="primary"

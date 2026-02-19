@@ -10,6 +10,10 @@ export default {
       type: String,
       required: true,
     },
+    image: {
+      type: String,
+      required: false,
+    },
     text: {
       type: String,
       required: true,

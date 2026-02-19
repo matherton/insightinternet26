@@ -1,5 +1,5 @@
 <template>
-  <HelloWorld />
+  <Intro />
   <About />
   <Solutions />
   <Work />
