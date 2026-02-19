@@ -84,6 +84,7 @@ export default {
   font-family: "Comic Sans MS", cursive, sans-serif;
   font-size: 16px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: black;
 }
 
 .bubble-tail {
