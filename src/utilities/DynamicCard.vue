@@ -1,5 +1,10 @@
 <template>
-  <v-card :title="title" :text="text" :variant="variant"></v-card>
+  <v-card
+    :image="image"
+    :title="title"
+    :text="text"
+    :variant="variant"
+  ></v-card>
 </template>
 
 <script>
@@ -12,7 +17,7 @@ export default {
     },
     image: {
       type: String,
-      required: false,
+      required: true,
     },
     text: {
       type: String,
