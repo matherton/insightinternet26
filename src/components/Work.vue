@@ -33,7 +33,7 @@ import ConnectAuto from "@/assets/connect-auto-logo.png";
     <v-divider
       color="primary"
       opacity=".7"
-      thickness="5"
+      thickness="3"
       variant="single"
       gradient
     >
