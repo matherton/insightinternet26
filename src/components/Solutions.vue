@@ -12,7 +12,7 @@ import { VCard } from "vuetify/components";
   >
     Solutions
   </v-divider>
-  <div id="solutions-section" class="solutions" style="scroll-margin-top: 6rem">
+  <div id="solutions-section" style="scroll-margin-top: 6rem">
     <v-container>
       <div class="solution">
         <h1 class="subheading grey--text"></h1>

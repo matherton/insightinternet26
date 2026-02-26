@@ -26,7 +26,7 @@ export default {
   props: {
     title: {
       type: String,
-      required: true,
+      required: false,
     },
     image: {
       type: String,
@@ -36,8 +36,11 @@ export default {
 };
 </script>
 
-<style>
-.v-image {
-  height: 200px;
+<style scoped>
+.v-card-title {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.contract .v-card-title {
+  background-color: transparent;
 }
 </style>
