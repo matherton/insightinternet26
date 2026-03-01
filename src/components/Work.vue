@@ -20,10 +20,18 @@ import ConnectAuto from "@/assets/connect-auto-logo.png";
     <v-container>
       <v-row>
         <v-col cols="12" md="4">
-          <ImageCard title="The Mash Tun" :image="MashLogo" class="logo" />
+          <ImageCard
+            title="The Mash Tun Pub App"
+            :image="MashLogo"
+            class="logo"
+          />
         </v-col>
         <v-col cols="12" md="4">
-          <ImageCard title="The Mash Tun" :image="MashLogo" class="logo" />
+          <ImageCard
+            title="The Mash Tun Menu App"
+            :image="MashLogo"
+            class="logo"
+          />
         </v-col>
         <v-col cols="12" md="4">
           <ImageCard title="Harkness Pies" :image="HarknessPie" class="logo" />
