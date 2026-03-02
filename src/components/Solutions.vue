@@ -42,32 +42,24 @@ export default {
     return {
       solutions: [
         {
-          title: "Custom Software Development",
-          subtitle:
-            "We specialize in creating custom software solutions tailored to your unique business needs.",
-          text: "Whether you need a web application, mobile app, or enterprise software, our team of experienced developers will work closely with you to design and build a solution that drives efficiency, enhances user experience, and supports your business goals.",
-          image: "/images/solutions.png",
+          title: "Why Choose Us?",
+          subtitle: "Collaboration and Innovation:",
+          text: "We work closely with our clients to understand their goals and deliver solutions that exceed expectations. At InsightInternet, we stay at the forefront of technology trends to bring the most advanced solutions to your business.",
         },
         {
-          title: "Custom Development",
-          subtitle:
-            "We specialize in creating custom software solutions tailored to your unique business needs.",
-          text: "Whether you need a web application, mobile app, or enterprise software, our team of experienced developers will work closely with you to design and build a solution that drives efficiency, enhances user experience, and supports your business goals.",
-          image: "/images/solutions.png",
+          title: "Services:",
+          subtitle: "Custom Software Development",
+          text: "We offer a range of services to help you achieve your goals. From custom applications to web development, tailored to meet your specific needs. Contact us today to learn more about our services.",
         },
         {
-          title: "Software Development",
-          subtitle:
-            "We specialize in creating custom software solutions tailored to your unique business needs.",
-          text: "Whether you need a web application, mobile app, or enterprise software, our team of experienced developers will work closely with you to design and build a solution that drives efficiency, enhances user experience, and supports your business goals.",
-          image: "/images/solutions.png",
+          title: "Support:",
+          subtitle: "Maintenance and Support",
+          text: "Comprehensive maintenance and support services to ensure your applications run smoothly. Hosting packages available to suit your needs with ongoing updates and troubleshooting to keep your applications running smoothly.",
         },
         {
-          title: "Lorium ipsum dolor sit amet",
-          subtitle:
-            "We specialize in creating custom software solutions tailored to your unique business needs.",
-          text: "Whether you need a web application, mobile app, or enterprise software, our team of experienced developers will work closely with you to design and build a solution that drives efficiency, enhances user experience, and supports your business goals.",
-          image: "/images/solutions.png",
+          title: "Trusted Partner:",
+          subtitle: "Consultation and Reliability:",
+          text: "Expert advice and consultation to help you make informed decisions about your technology stack. Depend on InsightInternet for consistent, high-quality service and ongoing support.",
         },
       ],
     };
