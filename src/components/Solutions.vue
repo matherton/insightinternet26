@@ -15,32 +15,51 @@ import { VCard } from "vuetify/components";
   <div id="solutions-section" style="scroll-margin-top: 6rem">
     <v-container>
       <div class="solution">
-        <h1 class="subheading grey--text"></h1>
         <v-row>
-          <v-col cols="12" sm="6" md="4" lg="3">
+          <v-col cols="12" sm="10" md="4" lg="2">
             <v-img
-              src="../assets/pie.png"
+              src="../assets/FrameworkLogos/vite.svg"
               alt="Solutions Image"
               class="solution-image"
             />
           </v-col>
-          <v-col cols="12" sm="6" md="4" lg="3">
+          <v-col cols="12" sm="10" md="4" lg="2">
             <v-img
-              src="../assets/pie.png"
+              src="../assets/FrameworkLogos/vuetify.png"
               alt="Solutions Image"
               class="solution-image"
             />
           </v-col>
-          <v-col cols="12" sm="6" md="4" lg="3">
+          <v-col cols="12" sm="10" md="4" lg="2">
             <v-img
-              src="../assets/pie.png"
+              src="../assets/FrameworkLogos/react.png"
               alt="Solutions Image"
               class="solution-image"
             />
           </v-col>
-          <v-col cols="12" sm="6" md="4" lg="3">
+          <v-col cols="12" sm="10" md="4" lg="2">
             <v-img
-              src="../assets/pie.png"
+              src="../assets/FrameworkLogos/vue.svg"
+              alt="Solutions Image"
+              class="solution-image"
+            />
+          </v-col>
+          <v-col cols="12" sm="10" md="4" lg="2">
+            <v-img
+              src="../assets/FrameworkLogos/daisyui.svg"
+              alt="Solutions Image"
+              class="solution-image"
+            />
+          </v-col>
+          <v-col
+            cols="12"
+            sm="10"
+            md="4"
+            lg="2"
+            class="d-flex justify-center align-center"
+          >
+            <v-img
+              src="../assets/FrameworkLogos/tailwindcss.svg"
               alt="Solutions Image"
               class="solution-image"
             />
