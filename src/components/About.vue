@@ -35,7 +35,7 @@ const items = [
       <v-col cols="12" md="4">
         <DynamicCard
           title="Mission Statement"
-          text="Our mission is to empower startups with robust and scalable applications, ensuring they have the technological edge to succeed in a competitive market Values Innovation Quality Collaboration Integrity"
+          text="Our mission is to empower startups with robust and scalable applications, ensuring they have the technological edge to succeed in a competitive market. We grow together through Training, consulting & hosting."
           variant="text"
         />
       </v-col>

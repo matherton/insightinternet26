@@ -17,6 +17,36 @@ import { VCard } from "vuetify/components";
       <div class="solution">
         <h1 class="subheading grey--text"></h1>
         <v-row>
+          <v-col cols="12" sm="6" md="4" lg="3">
+            <v-img
+              src="../assets/pie.png"
+              alt="Solutions Image"
+              class="solution-image"
+            />
+          </v-col>
+          <v-col cols="12" sm="6" md="4" lg="3">
+            <v-img
+              src="../assets/pie.png"
+              alt="Solutions Image"
+              class="solution-image"
+            />
+          </v-col>
+          <v-col cols="12" sm="6" md="4" lg="3">
+            <v-img
+              src="../assets/pie.png"
+              alt="Solutions Image"
+              class="solution-image"
+            />
+          </v-col>
+          <v-col cols="12" sm="6" md="4" lg="3">
+            <v-img
+              src="../assets/pie.png"
+              alt="Solutions Image"
+              class="solution-image"
+            />
+          </v-col>
+        </v-row>
+        <v-row>
           <v-col
             cols="12"
             sm="6"
