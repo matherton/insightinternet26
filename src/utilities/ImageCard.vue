@@ -4,18 +4,20 @@
       <v-card-title>{{ title }}</v-card-title>
     </v-img>
 
-    <v-card-subtitle class="pt-4"> Number 10 </v-card-subtitle>
+    <v-card-subtitle class="pt-4">{{ tech }}</v-card-subtitle>
 
     <v-card-text>
-      <div>Whitehaven Beach</div>
-
-      <div>Whitsunday Island, Whitsunday Islands</div>
+      <div>{{ description }}</div>
     </v-card-text>
 
     <v-card-actions>
-      <v-btn color="orange" text="Requirements"></v-btn>
-
-      <v-btn color="orange" text="Explore"></v-btn>
+      <v-btn
+        color="orange"
+        text="Explore"
+        :href="href"
+        target="_blank"
+        title="opens client App in new tab"
+      ></v-btn>
     </v-card-actions>
   </v-card>
 </template>
@@ -30,7 +32,19 @@ export default {
     },
     image: {
       type: String,
-      required: true,
+      required: false,
+    },
+    tech: {
+      type: String,
+      required: false,
+    },
+    description: {
+      type: String,
+      required: false,
+    },
+    href: {
+      type: String,
+      required: false,
     },
   },
 };
