@@ -1,25 +1,29 @@
 <template>
-  <v-card class="mx-auto" max-width="400" flat>
-    <v-img class="align-end text-white" :src="image" cover>
-      <v-card-title>{{ title }}</v-card-title>
-    </v-img>
+  <section>
+    <v-card class="mx-auto" max-width="400" flat>
+      <v-img class="align-end text-white" :src="image" cover mb-4>
+        <v-card-title>{{ title }}</v-card-title>
+      </v-img>
 
-    <v-card-subtitle class="pt-4">{{ tech }}</v-card-subtitle>
+      <strong v-if="jobTitle">{{ jobTitle }}</strong>
 
-    <v-card-text>
-      <div>{{ description }}</div>
-    </v-card-text>
+      <v-card-subtitle class="pt-4">{{ tech }}</v-card-subtitle>
 
-    <v-card-actions>
-      <v-btn
-        color="orange"
-        text="Explore"
-        :href="href"
-        target="_blank"
-        title="opens client App in new tab"
-      ></v-btn>
-    </v-card-actions>
-  </v-card>
+      <v-card-text>
+        <p>{{ description }}</p>
+      </v-card-text>
+
+      <v-card-actions>
+        <v-btn
+          color="orange"
+          text="Explore"
+          :href="href"
+          target="_blank"
+          title="opens client App in new tab"
+        ></v-btn>
+      </v-card-actions>
+    </v-card>
+  </section>
 </template>
 
 <script>
@@ -27,6 +31,10 @@ export default {
   name: "ImageCard",
   props: {
     title: {
+      type: String,
+      required: false,
+    },
+    jobTitle: {
       type: String,
       required: false,
     },
