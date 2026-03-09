@@ -18,18 +18,18 @@
         >
           {{ revealdescription ? "Hide Description" : "Show Description" }}
         </v-btn>
-        <v-btn color="orange" text="Explore" :href="href" target="_blank">
-          Explore
-        </v-btn>
       </v-card-actions>
     </v-card>
   </section>
-  <v-card-text>
+  <v-card-text style="padding-top: 0">
     <v-expand-transition>
       <p v-if="revealdescription" class="description" style="width: 100%">
         {{ description }}
       </p>
     </v-expand-transition>
+    <v-btn color="orange" text="Explore" :href="href" target="_blank">
+      Explore
+    </v-btn>
   </v-card-text>
 </template>
 

@@ -66,24 +66,7 @@ import ConnectAuto from "@/assets/connect-auto-logo.png";
           <ImageCard
             :image="LlyodBank"
             jobTitle="Sapient React Consultant"
-            description="
-            Banking Staff Support Application
-Client: Lloyds Banking Group
-
-Industry: Finance
-
-Project Duration: 6 months
-
-Project Description: Insight Internet provided React consulting services to Lloyds Banking Group through Sapient. The project involved the development of a reusable component library for a staff support application. The application was designed to assist banking staff in providing real-time loan eligibility information to customers over the phone. This innovative solution replaced a manual process that previously took up to two weeks, significantly improving efficiency and customer satisfaction.
-
-Tools Used: React, Cypress, REST APIs
-
-Results:
-
-Streamlined loan eligibility checks from two weeks to real-time.
-Enhanced customer service with instant data retrieval.
-Developed reusable components with comprehensive Cypress test coverage.
-Seamless integration with live APIs in collaboration with backend developers."
+            description="Insight Internet provided React consulting services to Lloyds Banking Group via Sapient, developing a reusable component library for an internal staff support application. The app enabled banking staff to deliver real-time loan eligibility information to customers over the phone, replacing a manual process that previously took up to two weeks. Key deliverables included fully tested reusable components with Cypress coverage and seamless integration with live APIs in close collaboration with backend developers."
             class="logo"
             href="https://www.lloydsbank.com/"
           />
@@ -93,24 +76,7 @@ Seamless integration with live APIs in collaboration with backend developers."
             :image="ArnoldClark"
             jobTitle="React Native Developer"
             class="logo"
-            description="Car Reservation Mobile App
-Client: Arnold Clark
-
-Industry: Automotive
-
-Project Duration: 5 months
-
-Project Description: Insight Internet undertook a remote contract with Arnold Clark to develop their car reservation mobile app. The app was developed using React and relied on Redux Saga for data management between web and mobile platforms. The project involved using VS Code and Xcode for actual device testing. Working within a small mobile team, the designs were delivered via Invision, and the app's functionality and design were implemented using ES6 and styled-components.
-
-Tools Used: React, Redux Saga, VS Code, Xcode, ES6, styled-components, Invision
-
-Results:
-
-Successfully developed a native mobile app for car reservations.
-Ensured seamless data flow between web and mobile using Redux Saga.
-Implemented design and functionality as per Invision prototypes.
-Conducted thorough testing on actual devices to ensure optimal performance.
-"
+            description="Insight Internet completed a remote contract with Arnold Clark to develop a native car reservation mobile app using React and Redux Saga for seamless data flow across web and mobile platforms. Working within a small mobile team, designs were delivered via Invision and implemented using ES6 and styled-components. The project also involved hands-on device testing using VS Code and Xcode to ensure optimal real-world performance."
             href="https://www.arnoldclark.com/"
           />
         </v-col>
@@ -119,23 +85,7 @@ Conducted thorough testing on actual devices to ensure optimal performance.
             :image="LlyodBank"
             jobTitle="BJSS React Consultant"
             class="logo"
-            description="React Loans Application Component Development
-Client: Lloyds Banking Group
-
-Industry: Finance
-
-Project Duration: 5 months
-
-Project Description: Insight Internet, through BJSS, provided React consulting services to Lloyds Banking Group. The project involved the development of reusable components in Storybook for their React Loans Application. The development was conducted in a fully agile environment, leveraging VS Code and TypeScript. Initially based at Lloyds' Head Office in Edinburgh, the team transitioned to remote work following a Covid-19 case. Each component, once approved by Product Owners, was integrated into the Loans App, enhancing its modularity and reusability.
-
-Tools Used: React, Storybook, TypeScript, VS Code, MS Teams
-
-Results:
-
-Successfully transitioned to remote work without impacting project timelines.
-Developed reusable components in Storybook, ensuring consistency and reusability.
-Enhanced collaboration and productivity using MS Teams.
-Provided comprehensive video demos to showcase component reusability across different brands."
+            description="Insight Internet provided React consulting services to Lloyds Banking Group via BJSS, developing reusable components in Storybook for their React Loans Application using TypeScript in a fully agile environment. Initially based at Lloyds' Edinburgh Head Office, the team seamlessly transitioned to remote work following a Covid-19 case, maintaining project timelines throughout. Each component was approved by Product Owners before integration into the Loans App, with video demos provided to showcase reusability across different brands."
             href="https://www.lloydsbank.com/"
           />
         </v-col>
@@ -144,23 +94,7 @@ Provided comprehensive video demos to showcase component reusability across diff
             :image="ConnectAuto"
             jobTitle="React Web Developer"
             class="logo"
-            description="Website Development and Enhancements
-Client: Connect Auto
-
-Industry: Automotive
-
-Project Duration: 6 months
-
-Project Description: Insight Internet collaborated with Connect Auto on various high-profile automotive projects, including the development of a website for Lamborghini and updates to the Jaguar Land Rover site. The Lamborghini project involved creating a website based on designs provided via Invision. The Jaguar Land Rover project included adding new functionality such as data handling with Flow and updating the main page after form submission. Additionally, Insight Internet worked on various client websites, creating reusable styled components, bespoke ES6 functionality, SVG components, and integrating the markdown-to-jsx package to enhance the CMS WYSIWYG editor.
-
-Tools Used: React, Flow, ES6, styled-components, SVG, JSON, markdown-to-jsx, Invision
-
-Results:
-
-Successfully developed a website for Lamborghini with high-fidelity design implementation.
-Enhanced Jaguar Land Rover site with advanced data handling and updated functionality.
-Created reusable components and bespoke functionality to improve efficiency and maintainability.
-Integrated markdown-to-jsx for enhanced content management capabilities."
+            description="Insight Internet collaborated with Connect Auto on a range of high-profile automotive projects, including developing a new website for Lamborghini from Invision designs and enhancing the Jaguar Land Rover site with advanced data handling via Flow and updated form submission functionality. Across the engagement, the team built reusable styled components, bespoke ES6 functionality, and SVG components for various client sites. The project also involved integrating the markdown-to-jsx package to improve content management capabilities within the CMS WYSIWYG editor."
             href="https://www.connect.auto/"
           />
         </v-col>
