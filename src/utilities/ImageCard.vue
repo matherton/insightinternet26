@@ -13,11 +13,13 @@
         <v-btn
           @click="toggleDescription"
           color="orange"
-          text="Explore"
           target="_blank"
           title="opens client App in new tab"
         >
           {{ revealdescription ? "Hide Description" : "Show Description" }}
+        </v-btn>
+        <v-btn color="orange" text="Explore" :href="href" target="_blank">
+          Explore
         </v-btn>
       </v-card-actions>
     </v-card>
@@ -56,6 +58,10 @@ export default {
     image: {
       type: String,
       required: true,
+    },
+    href: {
+      type: String,
+      required: false,
     },
   },
   setup() {
