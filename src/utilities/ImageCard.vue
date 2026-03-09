@@ -80,6 +80,13 @@ export default {
 </script>
 
 <style scoped>
+.v-card-title {
+  background: #00000080;
+}
+
+.contract .v-card-title {
+  background: none;
+}
 .description {
   margin: 0;
   width: 100%;
