@@ -9,24 +9,31 @@
 
       <v-card-subtitle class="pt-4">{{ tech }}</v-card-subtitle>
 
-      <v-card-text>
-        <p>{{ description }}</p>
-      </v-card-text>
-
       <v-card-actions>
         <v-btn
+          @click="toggleDescription"
           color="orange"
           text="Explore"
-          :href="href"
           target="_blank"
           title="opens client App in new tab"
-        ></v-btn>
+        >
+          {{ revealdescription ? "Hide Description" : "Show Description" }}
+        </v-btn>
       </v-card-actions>
     </v-card>
   </section>
+  <v-card-text>
+    <v-expand-transition>
+      <p v-if="revealdescription" class="description" style="width: 100%">
+        {{ description }}
+      </p>
+    </v-expand-transition>
+  </v-card-text>
 </template>
 
 <script>
+import { ref } from "vue";
+
 export default {
   name: "ImageCard",
   props: {
@@ -38,10 +45,6 @@ export default {
       type: String,
       required: false,
     },
-    image: {
-      type: String,
-      required: false,
-    },
     tech: {
       type: String,
       required: false,
@@ -50,19 +53,29 @@ export default {
       type: String,
       required: false,
     },
-    href: {
+    image: {
       type: String,
-      required: false,
+      required: true,
     },
+  },
+  setup() {
+    const revealdescription = ref(false);
+
+    function toggleDescription() {
+      revealdescription.value = !revealdescription.value;
+    }
+
+    return {
+      revealdescription,
+      toggleDescription,
+    };
   },
 };
 </script>
 
 <style scoped>
-.v-card-title {
-  background-color: rgba(0, 0, 0, 0.5);
-}
-.contract .v-card-title {
-  background-color: transparent;
+.description {
+  margin: 0;
+  width: 100%;
 }
 </style>
