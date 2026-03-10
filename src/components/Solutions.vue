@@ -15,7 +15,7 @@ import { VCard } from "vuetify/components";
   <div id="solutions-section" style="scroll-margin-top: 6rem">
     <v-container>
       <div class="solution">
-        <v-row class="hidden-sm-and-down">
+        <v-row class="hidden-sm-and-down img-center">
           <v-col cols="12" sm="10" md="4" lg="2">
             <v-img
               src="../assets/FrameworkLogos/vite.svg"
@@ -85,6 +85,13 @@ import { VCard } from "vuetify/components";
     </v-container>
   </div>
 </template>
+<style scoped>
+.img-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+</style>
 <script>
 export default {
   data() {
