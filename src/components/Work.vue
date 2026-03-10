@@ -66,6 +66,7 @@ import ConnectAuto from "@/assets/connect-auto-logo.png";
           <ImageCard
             :image="LlyodBank"
             jobTitle="Sapient React Consultant"
+            tech="React, Tailwind, Node.js, ES6, UX Design"
             description="Insight Internet provided React consulting services to Lloyds Banking Group via Sapient, developing a reusable component library for an internal staff support application. The app enabled banking staff to deliver real-time loan eligibility information to customers over the phone, replacing a manual process that previously took up to two weeks. Key deliverables included fully tested reusable components with Cypress coverage and seamless integration with live APIs in close collaboration with backend developers."
             class="logo"
             href="https://www.lloydsbank.com/"
@@ -75,6 +76,7 @@ import ConnectAuto from "@/assets/connect-auto-logo.png";
           <ImageCard
             :image="ArnoldClark"
             jobTitle="React Native Developer"
+            tech="React Native, Redux Saga, ES6, styled-components, VS Code, Xcode"
             class="logo"
             description="Insight Internet completed a remote contract with Arnold Clark to develop a native car reservation mobile app using React and Redux Saga for seamless data flow across web and mobile platforms. Working within a small mobile team, designs were delivered via Invision and implemented using ES6 and styled-components. The project also involved hands-on device testing using VS Code and Xcode to ensure optimal real-world performance."
             href="https://www.arnoldclark.com/"
@@ -84,6 +86,7 @@ import ConnectAuto from "@/assets/connect-auto-logo.png";
           <ImageCard
             :image="LlyodBank"
             jobTitle="BJSS React Consultant"
+            tech="React, styled components, storybook, VS Code"
             class="logo"
             description="Insight Internet provided React consulting services to Lloyds Banking Group via BJSS, developing reusable components in Storybook for their React Loans Application using TypeScript in a fully agile environment. Initially based at Lloyds' Edinburgh Head Office, the team seamlessly transitioned to remote work following a Covid-19 case, maintaining project timelines throughout. Each component was approved by Product Owners before integration into the Loans App, with video demos provided to showcase reusability across different brands."
             href="https://www.lloydsbank.com/"
@@ -93,6 +96,7 @@ import ConnectAuto from "@/assets/connect-auto-logo.png";
           <ImageCard
             :image="ConnectAuto"
             jobTitle="React Web Developer"
+            tech="React, styled components, Flow, VS Code"
             class="logo"
             description="Insight Internet collaborated with Connect Auto on a range of high-profile automotive projects, including developing a new website for Lamborghini from Invision designs and enhancing the Jaguar Land Rover site with advanced data handling via Flow and updated form submission functionality. Across the engagement, the team built reusable styled components, bespoke ES6 functionality, and SVG components for various client sites. The project also involved integrating the markdown-to-jsx package to improve content management capabilities within the CMS WYSIWYG editor."
             href="https://www.connect.auto/"
