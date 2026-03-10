@@ -5,7 +5,7 @@
         <v-card-title>{{ title }}</v-card-title>
       </v-img>
 
-      <strong v-if="jobTitle">{{ jobTitle }}</strong>
+      <strong v-if="jobTitle" style="padding-left: 1rem">{{ jobTitle }}</strong>
 
       <v-card-subtitle class="pt-4">{{ tech }}</v-card-subtitle>
 
@@ -18,6 +18,9 @@
         >
           {{ revealdescription ? "Hide Description" : "Show Description" }}
         </v-btn>
+        <v-btn color="orange" text="Explore" :href="href" target="_blank">
+          Explore
+        </v-btn>
       </v-card-actions>
     </v-card>
   </section>
@@ -27,9 +30,6 @@
         {{ description }}
       </p>
     </v-expand-transition>
-    <v-btn color="orange" text="Explore" :href="href" target="_blank">
-      Explore
-    </v-btn>
   </v-card-text>
 </template>
 
