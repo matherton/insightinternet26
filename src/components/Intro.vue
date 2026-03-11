@@ -1,10 +1,12 @@
 <template>
   <ThoughtBubble
     :thoughts="[
-      'What should I build next?',
-      'Vue is amazing!',
-      'I love coding!',
-      'Time for coffee?',
+      'What will we build next?',
+      'From idea to live site: photography, dev & hosting included.',
+      'Fast responses matter — so does fast deployment 🚀',
+      'We speak both business AND technical fluently 😉',
+      'Less back-and-forth, more shipping 📦',
+      'The stack you need, the support you did not expect.',
     ]"
     :interval="3000"
   />
