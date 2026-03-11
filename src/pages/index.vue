@@ -4,8 +4,5 @@
   <Solutions />
   <Work />
   <Contact />
+  <ContactForm />
 </template>
-
-<script setup>
-//
-</script>
