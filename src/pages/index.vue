@@ -3,6 +3,5 @@
   <About />
   <Solutions />
   <Work />
-  <Contact />
   <ContactForm />
 </template>

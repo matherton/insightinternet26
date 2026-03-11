@@ -1,12 +1,21 @@
 <template>
-  <v-card class="contact-form-card" max-width="600" elevation="4" rounded="lg">
-    <v-card-title class="text-h5 font-weight-bold pa-6 pb-2">
-      Get in Touch
-    </v-card-title>
-    <v-card-subtitle class="px-6 pb-4">
-      Fill out the form below and we'll get back to you shortly.
-    </v-card-subtitle>
-
+  <v-divider
+    color="primary"
+    opacity=".7"
+    thickness="10"
+    variant="double"
+    gradient
+    id="contact-section"
+  >
+    Contact
+  </v-divider>
+  <div class="mb-8 text-center">
+    <p class="text-subtitle-1">
+      Ready to transform your business with custom applications? Contact us
+      today to discuss your project.
+    </p>
+  </div>
+  <v-card class="contact-form-card" max-width="600" flat rounded="lg">
     <v-card-text class="px-6">
       <!-- Success Alert -->
       <v-alert
@@ -17,7 +26,8 @@
         closable
         @click:close="submitStatus = null"
       >
-        Your message was sent successfully! We'll be in touch soon.
+        Thank you for your interest message. We have received it and will get
+        back to you as soon as possible.
       </v-alert>
 
       <!-- Error Alert -->
@@ -98,19 +108,35 @@
           </v-col>
         </v-row>
 
-        <!-- Submit Button -->
-        <v-btn
-          type="submit"
-          color="primary"
-          size="large"
-          block
-          :loading="isSubmitting"
-          :disabled="!isFormValid || isSubmitting"
-          class="mt-2 mb-2"
-          prepend-icon="mdi-send"
-        >
-          Send Message
-        </v-btn>
+        <v-row class="mt-2 mb-2">
+          <v-col cols="12" sm="6">
+            <v-btn
+              type="button"
+              color="secondary"
+              size="large"
+              block
+              variant="outlined"
+              :disabled="isSubmitting"
+              prepend-icon="mdi-refresh"
+              @click="resetForm"
+            >
+              Reset
+            </v-btn>
+          </v-col>
+          <v-col cols="12" sm="6">
+            <v-btn
+              type="submit"
+              color="primary"
+              size="large"
+              block
+              :loading="isSubmitting"
+              :disabled="!isFormValid || isSubmitting"
+              prepend-icon="mdi-send"
+            >
+              Send Message
+            </v-btn>
+          </v-col>
+        </v-row>
       </v-form>
     </v-card-text>
   </v-card>
