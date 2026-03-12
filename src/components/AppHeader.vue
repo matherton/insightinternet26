@@ -10,7 +10,7 @@
 
     <v-btn
       color="primary"
-      class="ma-2"
+      class="ma-0 ma-md-5"
       @click="scrollToAboutSection()"
       variant="elevated"
     >
@@ -18,7 +18,7 @@
     </v-btn>
     <v-btn
       color="primary"
-      class="ma-2"
+      class="ma-0 ma-md-5"
       @click="scrollToSolutionsSection()"
       variant="elevated"
     >
@@ -26,7 +26,7 @@
     </v-btn>
     <v-btn
       color="primary"
-      class="ma-2"
+      class="ma-0 ma-md-5"
       @click="scrollToWorkSection()"
       variant="elevated"
     >
@@ -34,7 +34,7 @@
     </v-btn>
     <v-btn
       color="primary"
-      class="ma-2"
+      class="ma-0 ma-md-5"
       @click="scrollToContactSection()"
       variant="elevated"
     >
