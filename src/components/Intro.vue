@@ -8,7 +8,7 @@
       'Less back-and-forth, more shipping 📦',
       'The stack you need, the support you did not expect.',
     ]"
-    :interval="3000"
+    :interval="4000"
   />
   <v-container class="d-flex align-center" max-width="900" id="top">
     <div style="padding-top: 13.5rem">

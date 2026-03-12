@@ -58,11 +58,12 @@ function clear() {
     thickness="10"
     variant="double"
     gradient
+    id="contact-section"
   >
     Contact
   </v-divider>
 
-  <div class="contact" id="contact-section" style="scroll-margin-top: 6rem">
+  <div class="contact">
     <div class="mb-8 text-center">
       <p class="text-subtitle-1">
         Ready to transform your business with custom applications? Contact us
