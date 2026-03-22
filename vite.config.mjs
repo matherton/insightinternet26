@@ -11,7 +11,7 @@ import { fileURLToPath, URL } from "node:url";
 
 // https://vitejs.dev/config/ base: "/cannaExchange/",
 export default defineConfig({
-  base: "/insightinternet26/",
+  base: "/",
   plugins: [
     VueRouter(),
     Vue({
