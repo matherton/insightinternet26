@@ -9,6 +9,7 @@
     </v-app-bar-title>
 
     <v-btn
+      size="small"
       color="primary"
       class="ma-0 ma-md-5"
       @click="scrollToAboutSection()"
@@ -17,6 +18,7 @@
       About
     </v-btn>
     <v-btn
+      size="small"
       color="primary"
       class="ma-0 ma-md-5"
       @click="scrollToSolutionsSection()"
@@ -25,6 +27,7 @@
       Solutions
     </v-btn>
     <v-btn
+      size="small"
       color="primary"
       class="ma-0 ma-md-5"
       @click="scrollToWorkSection()"
@@ -33,6 +36,7 @@
       Work
     </v-btn>
     <v-btn
+      size="small"
       color="primary"
       class="ma-0 ma-md-5"
       @click="scrollToContactSection()"
