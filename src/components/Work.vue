@@ -25,7 +25,7 @@ import ConnectAuto from "@/assets/connect-auto-logo.png";
             :image="MashLogo"
             tech="Vue, daisyUI, Node.js, ES6, GIMP"
             description="Developed and host a Vue application for The Mash Tun Pub. The Manager supplies monthly updates of their promotions and events, which we update the events carousel with."
-            href="https://edinburghmashtun.co.uk/"
+            href="https://matherton.github.io/mash-tun-app/"
             class="logo"
           />
         </v-col>
