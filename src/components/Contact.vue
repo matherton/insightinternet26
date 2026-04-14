@@ -59,6 +59,7 @@ function clear() {
     variant="double"
     gradient
     id="contact-section"
+    style="scroll-margin-top: 6rem"
   >
     Contact
   </v-divider>
