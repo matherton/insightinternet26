@@ -100,12 +100,12 @@ export default {
         {
           title: "Why Choose Us?",
           subtitle: "Collaboration and Innovation:",
-          text: "We work closely with our clients to understand their goals and deliver solutions that exceed expectations. At InsightInternet, we stay at the forefront of technology trends to bring the most advanced solutions to your business.",
+          text: "I work closely with our clients to understand their goals and deliver solutions that exceed expectations. At InsightInternet, I stay at the forefront of technology trends to bring the most advanced solutions to your business.",
         },
         {
           title: "Services:",
           subtitle: "Custom Software Development",
-          text: "We offer a range of services to help you achieve your goals. From custom applications to web development, tailored to meet your specific needs. Contact us today to learn more about our services.",
+          text: "I offer a range of services to help you achieve your goals. From custom applications to web development, tailored to meet your specific needs. Contact me today to learn more about InsightInternet services.",
         },
         {
           title: "Support:",

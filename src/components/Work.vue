@@ -24,7 +24,7 @@ import ConnectAuto from "@/assets/connect-auto-logo.png";
             title="The Mash Tun Pub App"
             :image="MashLogo"
             tech="Vue, daisyUI, Node.js, ES6, GIMP"
-            description="Developed and host a Vue application for The Mash Tun Pub. The Manager supplies monthly updates of their promotions and events, which we update the events carousel with."
+            description="Developed and host a Vue application for The Mash Tun Pub. The Manager supplies monthly updates of their promotions and events, which I update the events carousel with."
             href="https://matherton.github.io/mash-tun-app/"
             class="logo"
           />
@@ -34,7 +34,7 @@ import ConnectAuto from "@/assets/connect-auto-logo.png";
             title="The Mash Tun Menu App"
             :image="MashLogo"
             tech="React, Node.js, ES6, GIMP"
-            description="Developed and host a performance-optimised React Menu Application for The Mash Tun pub. As part of our comprehensive service, we coordinated the professional food photography session."
+            description="Developed and host a performance-optimised React Menu Application for The Mash Tun pub. As part of the comprehensive service, I coordinated the professional food photography session."
             href="https://matherton.github.io/mash-tun/"
             class="logo"
           />

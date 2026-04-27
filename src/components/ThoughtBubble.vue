@@ -81,7 +81,7 @@ export default {
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: "Comic Sans MS", "Comic Sans", cursive, fantasy, sans-serif;
   font-size: 16px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   color: black;

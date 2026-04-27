@@ -67,7 +67,7 @@ function clear() {
   <div class="contact">
     <div class="mb-8 text-center">
       <p class="text-subtitle-1">
-        Ready to transform your business with custom applications? Contact us
+        Ready to transform your business with custom applications? Contact me
         today to discuss your project.
       </p>
     </div>

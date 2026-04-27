@@ -21,11 +21,11 @@
           Empowering Startups with Cutting-Edge Applications
         </h2>
         <p>
-          At InsightInternet, we specialise in delivering high-quality
-          applications to help startups succeed. Dedicated to providing bespoke
-          solutions that drive growth and efficiency as well as delivering
-          customised solutions without the constrants of cloud-based website
-          builders i.e. Wix, Squarespace ect.
+          As founder and sole developer of InsightInternet, I handle everything
+          (client consultation, design, build, and hosting) using advanced AI to
+          deliver bespoke applications that no Wix or Squarespace template could
+          match. You get one point of contact, total accountability, and a
+          product built exactly to your needs.
         </p>
       </div>
 
@@ -51,7 +51,7 @@
             <template #subtitle>
               <div class="text-subtitle-1">
                 Ready to transform your business with custom-built solutions
-                tailored to your needs? Contact us
+                tailored to your needs?
               </div>
             </template>
           </v-card>
