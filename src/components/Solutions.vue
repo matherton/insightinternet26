@@ -98,9 +98,9 @@ export default {
     return {
       solutions: [
         {
-          title: "Why Choose Us?",
+          title: "Why Choose Me?",
           subtitle: "Collaboration and Innovation:",
-          text: "I work closely with our clients to understand their goals and deliver solutions that exceed expectations. At InsightInternet, I stay at the forefront of technology trends to bring the most advanced solutions to your business.",
+          text: "I work closely with my clients to understand their goals and deliver solutions that exceed expectations. At InsightInternet, I stay at the forefront of technology trends to bring the most advanced solutions to your business.",
         },
         {
           title: "Services:",
