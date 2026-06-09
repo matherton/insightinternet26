@@ -81,8 +81,8 @@ export default {
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-family: "Comic Sans MS", "Comic Sans", cursive, fantasy, sans-serif;
-  font-size: 16px;
+  font-family: "Brush Script MT", cursive;
+  font-size: 1.5rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   color: black;
 }

@@ -22,10 +22,11 @@
         </h2>
         <p>
           As founder and sole developer of InsightInternet, I handle everything
-          (client consultation, design, build, and hosting) using advanced AI to
-          deliver bespoke applications that no Wix or Squarespace template could
-          match. You get one point of contact, total accountability, and a
-          product built exactly to your needs.
+          (client consultation, design, build, and hosting) using modern
+          programming techniques and tools to deliver bespoke applications that
+          no Wix or Squarespace template could match. You get one point of
+          contact, total accountability, and a product built exactly to your
+          needs.
         </p>
       </div>
 
