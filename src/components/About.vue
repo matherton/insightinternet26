@@ -40,7 +40,7 @@ const items = [
           variant="text"
         />
       </v-col>
-      <v-col cols="12" md="3">
+      <v-col cols="12" md="3" style="padding: 0 1.75rem 1rem 1.75rem">
         <v-img :width="150" aspect-ratio="16/9" :src="pauseLogo"></v-img>
         <p style="font-size: 0.875rem">
           Volunteer for Pause AI helping organise the
