@@ -1,7 +1,7 @@
 <script setup>
 import List from "../utilities/List.vue";
 import DynamicCard from "../utilities/DynamicCard.vue";
-import pauseLogo from "@/assets/pauseai-banner.png";
+import pauseLogo from "@/assets/pauseai-banner-BG.png";
 const items = [
   { text: "Real-Time", icon: "mdi-clock" },
   { text: "Audience", icon: "mdi-account" },
