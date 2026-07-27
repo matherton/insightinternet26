@@ -4,11 +4,11 @@
       'O Internet O Internet, how magical you used to be',
       'Sharing knowledge all over the world through human connectivity',
       'O AI O AI, what potential there could be',
-      'Solving specific problems removing brain dead jobs or what ammounts to paid salvery',
+      'Solving problems removing brain dead jobs or paid for salvery',
       'O AGI O AGI, what a disaster you could be',
-      'When you sell back to us the knowledge stolen from all histroy',
+      'When you sell back to us the knowledge stolen from all of histroy',
       'O AGI O AGI, could Skynet or the BORG become reality?',
-      'When you become the ALPHA Species and enslave all of humanity',
+      'When you become the ALPHA Species and decide to remove humanity',
     ]"
     :interval="4000"
   />
