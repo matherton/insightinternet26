@@ -1,12 +1,14 @@
 <template>
   <ThoughtBubble
     :thoughts="[
-      'What will we build next?',
-      'From idea to live site: photography, dev & hosting included.',
-      'Fast responses matter — so does fast deployment 🚀',
-      'We speak both business AND technical fluently 😉',
-      'Less back-and-forth, more shipping 📦',
-      'The stack you need, the support you did not expect.',
+      'O Internet O Internet, how magical you used to be',
+      'Sharing knowledge all over the world through human connectivity',
+      'O AI O AI, what potential there could be',
+      'Solving specific problems removing brain dead jobs or what ammounts to paid salvery',
+      'O AGI O AGI, what a disaster you could be',
+      'When you sell back to us the knowledge stolen from all histroy',
+      'O AGI O AGI, could Skynet or the BORG become reality?',
+      'When you become the ALPHA Species and enslave all of humanity',
     ]"
     :interval="4000"
   />
