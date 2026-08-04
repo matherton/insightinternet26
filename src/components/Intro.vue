@@ -12,11 +12,13 @@
     ]"
     :interval="4000"
   />
+
   <v-container class="d-flex align-center" max-width="900" id="top">
     <div style="padding-top: 13.5rem">
       <v-img class="mb-4" height="250" src="../assets/me-cropped.webp" />
 
       <div class="mb-8 text-center">
+        <PoemAudio />
         <div class="text-body-2 font-weight-light mb-n1">Welcome to</div>
         <h1 class="text-h2 my-0 font-weight-bold">InsightInternet</h1>
         <h2 class="text-grey mb-2">
@@ -80,8 +82,13 @@
 </template>
 <script>
 import ThoughtBubble from "./ThoughtBubble.vue";
+import PoemAudio from "./PoemAudio.vue";
 
 export default {
+  components: {
+    ThoughtBubble,
+    PoemAudio,
+  },
   data() {
     return {
       handleEvent: null, // Initialize with a default value

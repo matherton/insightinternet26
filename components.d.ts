@@ -17,6 +17,7 @@ declare module 'vue' {
     Contact: typeof import('./src/components/Contact.vue')['default']
     ContactForm: typeof import('./src/components/ContactForm.vue')['default']
     Intro: typeof import('./src/components/Intro.vue')['default']
+    PoemAudio: typeof import('./src/components/PoemAudio.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     Solutions: typeof import('./src/components/Solutions.vue')['default']
