@@ -27,6 +27,10 @@ export default {
       type: Number,
       default: 3000,
     },
+    resetTrigger: {
+      type: Number,
+      default: 0,
+    },
   },
   data() {
     return {
@@ -37,6 +41,13 @@ export default {
   computed: {
     currentThought() {
       return this.thoughts[this.currentIndex];
+    },
+  },
+  watch: {
+    resetTrigger() {
+      this.currentIndex = 0;
+      this.stopCycling();
+      this.startCycling();
     },
   },
   mounted() {

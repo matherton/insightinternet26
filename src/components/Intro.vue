@@ -11,6 +11,7 @@
       'When you become the ALPHA species and decide to remove humanity',
     ]"
     :interval="4000"
+    :reset-trigger="thoughtResetTrigger"
   />
 
   <v-container class="d-flex align-center" max-width="900" id="top">
@@ -18,7 +19,7 @@
       <v-img class="mb-4" height="250" src="../assets/me-cropped.webp" />
 
       <div class="mb-8 text-center">
-        <PoemAudio />
+        <PoemAudio @play="onAudioPlay" />
         <div class="text-body-2 font-weight-light mb-n1">Welcome to</div>
         <h1 class="text-h2 my-0 font-weight-bold">InsightInternet</h1>
         <h2 class="text-grey mb-2">
@@ -91,10 +92,14 @@ export default {
   },
   data() {
     return {
-      handleEvent: null, // Initialize with a default value
+      handleEvent: null,
+      thoughtResetTrigger: 0,
     };
   },
   methods: {
+    onAudioPlay() {
+      this.thoughtResetTrigger++;
+    },
     scrollToAboutSection() {
       const aboutSection = document.getElementById("about-section");
       aboutSection.scrollIntoView({ behavior: "smooth" });
@@ -113,33 +118,4 @@ export default {
     },
   },
 };
-</script>
-<script setup>
-/* const links = [
-  {
-    href: "https://vuetifyjs.com/",
-    icon: "mdi-information-outline",
-    subtitle:
-      "InsightInternet was founded with a vision to support startups by providing top-notch applications. Based in Edinburgh and partnering with Edinburgh startups and small businesses, we leverage the latest technologies to create seamless, responsive, and scalable applications.",
-    title: "Story",
-  },
-  {
-    href: "https://vuetifyjs.com/introduction/why-vuetify/#feature-guides",
-    icon: "mdi-briefcase-outline",
-    subtitle: "Explore frameworks and Tools.",
-    title: "Mission statement",
-  },
-  {
-    href: "https://vuetifyjs.com/components/all",
-    icon: "mdi-briefcase-account-outline",
-    subtitle: "Discover what projects have been built by InsightInternet.",
-    title: "Values",
-  },
-  {
-    href: "https://discord.vuetifyjs.com",
-    icon: "mdi-email-outline",
-    subtitle: "Connect with InsightInternet.",
-    title: "Contact",
-  },
-]; */
 </script>
