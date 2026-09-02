@@ -21,7 +21,7 @@ import ConnectAuto from "@/assets/connect-auto-logo.png";
       <v-row>
         <v-col cols="12" md="4">
           <ImageCard
-            title="The Mash Tun Pub App"
+            title="The Mash Tun Pub"
             :image="MashLogo"
             tech="Vue, daisyUI, Node.js, ES6, GIMP"
             description="Developed and host a Vue application for The Mash Tun Pub. The Manager supplies monthly updates of their promotions and events, which I update the events carousel with."
@@ -31,7 +31,7 @@ import ConnectAuto from "@/assets/connect-auto-logo.png";
         </v-col>
         <v-col cols="12" md="4">
           <ImageCard
-            title="The Mash Tun Menu App"
+            title="The Mash Tun Menu"
             :image="MashLogo"
             tech="React, Node.js, ES6, GIMP"
             description="Developed and host a performance-optimised React Menu Application for The Mash Tun pub. As part of the comprehensive service, I coordinated the professional food photography session."
@@ -43,9 +43,9 @@ import ConnectAuto from "@/assets/connect-auto-logo.png";
           <ImageCard
             title="Harkness Pies"
             :image="HarknessPie"
-            tech="React, Tailwind, Node.js, ES6, UX Design"
-            description="InsightInternet created a React Web Application for Harkness Pies. The system features a user-friendly interface for customers to view products and find out more about its ethos and the owner, Patrick Harkness. "
-            href="https://matherton.github.io/harkness-pies/"
+            tech="Vue, Vuetify, Node.js, ES6, UX Design, GIMP"
+            description="InsightInternet created a Vue Web Application for Harkness Pies including a secure Members Area using auth0 and an online shop that will hook into their instore payment sysytem once real product images are available."
+            href="https://matherton.github.io/harknessPies/"
             class="logo"
           />
         </v-col>
