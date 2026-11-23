@@ -40,15 +40,15 @@ const items = [
           variant="text"
         />
       </v-col>
-      <v-col cols="12" md="3" style="padding: 0 1.75rem 1rem 1.75rem">
+      <v-col cols="12" md="3" style="padding: 0 2rem 1rem 1.75rem">
         <v-img :width="150" aspect-ratio="16/9" :src="pauseLogo"></v-img>
         <p style="font-size: 0.875rem">
-          Volunteer for Pause AI helping organise the
-          <a href="https://luma.com/j627zgd2" target="_blank">first meeting</a>
-          of our Edinburgh `chapter` in June 2026. Pause AI is a global
-          non-profit organisation dedicated to making people aware of the
-          existential risks of AI and advocating for it's responsible
-          development and deployment.
+          Have been working with PauseAI since 2025, attending weekly online meetings and helping to organise and attend:
+          <ul style="margin-left: 1rem">
+            <li><a href="https://luma.com/mpan6y4o?tk=Q1eXfB" target="_blank">PauseAI March to Stop AI Data Centres</a></li>
+            <li><a href="https://luma.com/6jp2nqe9?tk=gixpVc" target="_blank">Panel Discussion: Who's Responsible When AI Goes Wrong</a></li>
+            <li><a href="https://luma.com/j627zgd2" target="_blank">the first public meeting</a> for PauseAI Scotland</li>
+          </ul>
         </p>
       </v-col>
     </v-row>
